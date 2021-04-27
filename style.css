@@ -1,0 +1,8 @@
+.headerContainer{
+    width: 100vw;
+    height: 20vh;
+    border: 1px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
