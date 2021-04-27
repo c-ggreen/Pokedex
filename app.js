@@ -31,28 +31,34 @@ $(()=>{
         const data = await response.json()
         console.log(data);
         $('#pokeName').html(data.name)
-        let colorType = $('#pokeType').html(data.types[0].type.name)
+        $('#pokeType').html(data.types[0].type.name)
         $('#pokeNum').html(data.id)
         $('#pokePic').attr("src", data.sprites.front_default)
 
-        if(colorType.value() === 'fire'){
+        // Changes the color of the background according to Pokemon Type
+        let colorType = $('#pokeType')
+        console.log(colorType[0].innerHTML);
+
+        if(colorType[0].innerHTML == 'fire'){
             $('body').css('background-color','#ff4422')
         }
-    }
-    
-    
-    
+        else if(colorType[0].innerHTML == 'normal'){
+            $('body').css('background-color','#aaaa99')
+        }
+        else if(colorType[0].innerHTML == 'water'){
+            $('body').css('background-color','#3399ff')
+        }
+        else if(colorType[0].innerHTML == 'electric'){
+            $('body').css('background-color','#ffcc33')
+        }
+        else if(colorType[0].innerHTML == 'grass'){
+            $('body').css('background-color','#77cc55')
+        }
+        else{
+            $('body').css('background-color', '#ffffff')
+        }
+    } 
 })
-switch(colorType){
-    case 'fire' : fireType;
-        break;
-    case 'normal' : normalType;
-        break;
 
-}
 
-let normalType = $('body').css('background-color','#aaaa99')
-let fireType = $('body').css('background-color','#ff4422')
-let waterType = $('body').css('background-color','#3399ff')
-let electricType = $('body').css('background-color','#ffcc33')
-let grassType = $('body').css('background-color','#77cc55')
+
