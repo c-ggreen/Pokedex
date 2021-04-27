@@ -33,8 +33,7 @@ $(()=>{
         $('#pokeName').html(data.name)
         $('#pokeType').html(data.types[0].type.name)
         $('#pokeNum').html(data.id)
-        $('#pokePic').attr("src", data.sprites.front_default)
-
+        
         // Changes the color of the background according to Pokemon Type
         let colorType = $('#pokeType')
         console.log(colorType[0].innerHTML);
