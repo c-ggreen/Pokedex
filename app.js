@@ -42,19 +42,19 @@ $(()=>{
         console.log(colorType[0].innerHTML);
 
         if(colorType[0].innerHTML == 'FIRE'){
-            $('.cardInner').css('background-color','#ff4422')
+            $('.cardInner').css({background: 'linear-gradient(to right, #f12711, #f5af19)'})
         }
         else if(colorType[0].innerHTML == 'NORMAL'){
-            $('.cardInner').css('background-color','#aaaa99')
+            $('.cardInner').css({background: 'linear-gradient(to right, #8e9eab, #eef2f3)'})
         }
         else if(colorType[0].innerHTML == 'WATER'){
-            $('.cardInner').css('background-color','#3399ff')
+            $('.cardInner').css({background: 'linear-gradient(to right, #5433ff, #20bdff, #a5fecb)'})
         }
         else if(colorType[0].innerHTML == 'ELECTRIC'){
-            $('.cardInner').css('background-color','#ffcc33')
+            $('.cardInner').css({background: 'linear-gradient(to right, #fffc00, #ffffff)'})
         }
         else if(colorType[0].innerHTML == 'GRASS'){
-            $('.cardInner').css('background-color','#77cc55')
+            $('.cardInner').css({background: 'linear-gradient(to right, #56ab2f, #a8e063)'})
         }
         else{
             $('.cardInner').css('background-color', '#ffffff')
