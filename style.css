@@ -1,8 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .headerContainer{
-    width: 100vw;
-    height: 20vh;
-    border: 1px solid purple;
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid purple; */
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
 }
+.cardOuter{
+    border: 1px solid black;
+    height: 80vh;
+    width: 35%;
+    border-radius: 5%;
+    background-color: #ffcc28;
+}
+    .cardInner{
+        margin: 3%;
+        /* border: 1px solid black; */
+        height: 94%;
+        background-color: white;
+    }
+        .info{
+            /* border: 1px solid red; */
+            height: 100%;
+        }
+                .cardHeader{
+                    border: 1px solid blue;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 10%;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                .pokeImage{
+                    border: 1px solid black;
+                    height: 45%;
+                    width: 90%;
+                    margin: 0 auto;
+                    border-radius: 5%;
+                }
+                .abilityContainer{
+                    border: 1px solid purple;
+                    height: 35%;
+                }
+                .numContainer{
+                    border: 1px solid orange;
+                    height: 10%;
+                }

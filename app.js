@@ -34,27 +34,27 @@ $(()=>{
         $('#pokeType').html(data.types[0].type.name)
         $('#pokeNum').html(data.id)
         
-        // Changes the color of the background according to Pokemon Type
+        // Changes the color of the card background according to Pokemon Type
         let colorType = $('#pokeType')
         console.log(colorType[0].innerHTML);
 
         if(colorType[0].innerHTML == 'fire'){
-            $('body').css('background-color','#ff4422')
+            $('.cardInner').css('background-color','#ff4422')
         }
         else if(colorType[0].innerHTML == 'normal'){
-            $('body').css('background-color','#aaaa99')
+            $('.cardInner').css('background-color','#aaaa99')
         }
         else if(colorType[0].innerHTML == 'water'){
-            $('body').css('background-color','#3399ff')
+            $('.cardInner').css('background-color','#3399ff')
         }
         else if(colorType[0].innerHTML == 'electric'){
-            $('body').css('background-color','#ffcc33')
+            $('.cardInner').css('background-color','#ffcc33')
         }
         else if(colorType[0].innerHTML == 'grass'){
-            $('body').css('background-color','#77cc55')
+            $('.cardInner').css('background-color','#77cc55')
         }
         else{
-            $('body').css('background-color', '#ffffff')
+            $('.cardInner').css('background-color', '#ffffff')
         }
     } 
 })

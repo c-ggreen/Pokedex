@@ -11,15 +11,33 @@
 <body>
     <div class="headerContainer">
         <div class="title"><h1>PokeDex</h1></div>
-
     </div>
 
-    <div class="info">
-        <h3>Pokemon Name: <span id="pokeName"></span></h3>
-        <h3>Pokemon Type: <span id="pokeType"></span></h3>
-        <h3>Pokemon No: <span id="pokeNum"></span></h3>
-    </div>
+    <div class="cardOuter">
+        <div class="cardInner">
+            <div class="info">
 
+                <div class="cardHeader">
+                    <h3>Name: <span id="pokeName"></span></h3>
+                    <h3>Type: <span id="pokeType"></span></h3>
+                </div>
+
+                <div class="pokeImage">
+                    <h1>image</h1>
+                </div>
+
+                <div class="abilityContainer">
+                    <h3>Abilities: <span id="pokeAbility"></span></h3>
+                </div>
+
+                <div class="numContainer">
+                    <h3>No: <span id="pokeNum"></span></h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
     <form action="">
         <input type="text" placeholder="Enter name or number.">
         <input type="submit" value="Get Pokemon Info">
