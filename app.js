@@ -32,7 +32,7 @@ $(()=>{
         console.log(data);
         $('#pokeName').html(data.name.toUpperCase())
         $('#pokeType').html(data.types[0].type.name.toUpperCase())
-        // $('pokeImage').attr("href", data.sprites.front_default)
+        $('#cardImage').attr('src', data.sprites.other.dream_world.front_default)
         $('#pokeAbility1').html(data.abilities[0].ability.name.toUpperCase())
         $('#pokeAbility2').html(data.abilities[1].ability.name.toUpperCase())
         $('#pokeNum').html(data.id)
@@ -57,7 +57,7 @@ $(()=>{
             $('.cardInner').css({background: 'linear-gradient(to right, #56ab2f, #a8e063)'})
         }
         else{
-            $('.cardInner').css('background-color', '#ffffff')
+            $('.cardInner').css({background: 'linear-gradient(to right, #c6ffdd, #fbd786, #f7797d)'})
         }
     } 
 })
