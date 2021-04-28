@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
 
 body{
     background: linear-gradient(to right, #8e9eab, #eef2f3);
@@ -16,11 +17,12 @@ body{
     align-items: center;
     font-family: 'Indie Flower', cursive;
     font-size: 2em;
+    color: #ffcc28;
 }
 .cardOuter{
     border: 1px solid black;
     height: 80vh;
-    width: 35%;
+    width: 30%;
     border-radius: 5%;
     background-color: #ffcc28;
 }
@@ -41,13 +43,14 @@ body{
                     height: 10%;
                     width: 90%;
                     margin: 0 auto;
+                    font-family: 'Antonio', sans-serif;
                 }
                 .pokeImage{
                     /* border: 1px solid black; */
                     height: 45%;
                     width: 90%;
                     margin: 0 auto;
-                    border-radius: 5%;
+                    box-shadow: rgba(255, 204, 40, 0.16) 0px 1px 4px, rgb(255, 204, 40) 0px 0px 0px 3px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -63,10 +66,12 @@ body{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    font-family: 'Antonio', sans-serif;
                 }
                 .numContainer{
                     /* border: 1px solid orange; */
                     height: 10%;
                     width: 95%;
                     margin: 0 auto;
+                    font-family: 'Antonio', sans-serif;
                 }
