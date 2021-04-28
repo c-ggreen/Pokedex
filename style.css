@@ -35,7 +35,7 @@ body{
             height: 100%;
         }
                 .cardHeader{
-                    border: 1px solid blue;
+                    /* border: 1px solid blue; */
                     display: flex;
                     justify-content: space-between;
                     height: 10%;
@@ -43,17 +43,26 @@ body{
                     margin: 0 auto;
                 }
                 .pokeImage{
-                    border: 1px solid black;
+                    /* border: 1px solid black; */
                     height: 45%;
                     width: 90%;
                     margin: 0 auto;
                     border-radius: 5%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
                 }
                 .abilityContainer{
-                    border: 1px solid purple;
+                    /* border: 1px solid purple; */
                     height: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
                 .numContainer{
-                    border: 1px solid orange;
+                    /* border: 1px solid orange; */
                     height: 10%;
+                    width: 95%;
+                    margin: 0 auto;
                 }

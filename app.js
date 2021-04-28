@@ -30,27 +30,30 @@ $(()=>{
         // change the data to the JSON format using .json()
         const data = await response.json()
         console.log(data);
-        $('#pokeName').html(data.name)
-        $('#pokeType').html(data.types[0].type.name)
+        $('#pokeName').html(data.name.toUpperCase())
+        $('#pokeType').html(data.types[0].type.name.toUpperCase())
+        // $('pokeImage').attr("href", data.sprites.front_default)
+        $('#pokeAbility1').html(data.abilities[0].ability.name.toUpperCase())
+        $('#pokeAbility2').html(data.abilities[1].ability.name.toUpperCase())
         $('#pokeNum').html(data.id)
         
         // Changes the color of the card background according to Pokemon Type
         let colorType = $('#pokeType')
         console.log(colorType[0].innerHTML);
 
-        if(colorType[0].innerHTML == 'fire'){
+        if(colorType[0].innerHTML == 'FIRE'){
             $('.cardInner').css('background-color','#ff4422')
         }
-        else if(colorType[0].innerHTML == 'normal'){
+        else if(colorType[0].innerHTML == 'NORMAL'){
             $('.cardInner').css('background-color','#aaaa99')
         }
-        else if(colorType[0].innerHTML == 'water'){
+        else if(colorType[0].innerHTML == 'WATER'){
             $('.cardInner').css('background-color','#3399ff')
         }
-        else if(colorType[0].innerHTML == 'electric'){
+        else if(colorType[0].innerHTML == 'ELECTRIC'){
             $('.cardInner').css('background-color','#ffcc33')
         }
-        else if(colorType[0].innerHTML == 'grass'){
+        else if(colorType[0].innerHTML == 'GRASS'){
             $('.cardInner').css('background-color','#77cc55')
         }
         else{
