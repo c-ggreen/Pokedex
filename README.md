@@ -6,3 +6,4 @@ This is a PokeDex I created using JQuery and APIs. This is a fully responsive Po
 * Image
 * Abilities
 * Number
+To test it out for yourself, visit my [Heroku](https://pokemon-app-cg.herokuapp.com/)
