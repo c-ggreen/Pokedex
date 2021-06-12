@@ -17,7 +17,7 @@ $(()=>{
         event.preventDefault()
 
         // set a variable for the user input
-        const userInput = $('input[type="text"]').val()
+        const userInput = $('input[type="text"]').val().toLowerCase()
         console.log(userInput);
         getPokeData(userInput)
     })
